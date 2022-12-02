@@ -21,7 +21,7 @@
         <el-card>
           <template #header>
             <div class="card-header">
-              <span>模块二</span>
+              <span>模块二2</span>
               <el-button class="button" text>Operation button</el-button>
             </div>
           </template>
