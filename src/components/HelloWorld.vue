@@ -98,7 +98,7 @@ export default {
   mounted() {
     // WebSocket
     if ('WebSocket' in window) {
-      this.websocket = new WebSocket('ws://localhost/channel/log')
+      this.websocket = new WebSocket('ws://192.168.40.254/channel/log')
       // alert('连接浏览器')
       this.initWebSocket()
     } else {
@@ -196,7 +196,7 @@ const form = reactive({
 
 
 const getWebSocket = () => {
-  fetch('http://localhost:80/log ', {
+  fetch('http://192.168.40.254:80/log ', {
     method: 'GET',
   }).then(response => {
     if (response.ok){
